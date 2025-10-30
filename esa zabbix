@@ -726,3 +726,7 @@ Object: hsmErrorReason (DisplayString)</description>
                         </mapping>
                     </mappings>
                 </valuemap>
+                </valuemaps>
+        </template>
+    </templates>
+</zabbix_export>
