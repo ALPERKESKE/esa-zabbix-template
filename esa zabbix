@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>7.0</version>
+    <template_groups>
+        <template_group>
+            <uuid>a571c0d144b14fd4a87a9d9b2aa9fcd6</uuid>
+            <name>Templates/Applications</name>
+        </template_group>
+    </template_groups>
+    <templates>
+        <template>
+            <uuid>830caa8f383d4ab998eff7d9d07de399</uuid>
+            <template>akeske_CW-Cisco-ESA-SNMP_test</template>
+            <name>akeske_CW-Cisco-ESA-SNMP_test</name>
+            <description>## Cisco Email Security Appliance (ESA) SNMPv2 Template
+            
+Bu şablon ASYNCOS-MAIL-MIB MIB'inden alınan verilere dayanmaktadır.
+Tüm öğeler ve keşif kuralları varsayılan olarak devre dışı bırakılmıştır.
+            
+MIB Referansı: https://mibs.observium.org/mib/ASYNCOS-MAIL-MIB/</description>
+            <groups>
+                <group>
+                    <name>Templates/Applications</name>
+                </group>
+            </groups>
+            <items>
+                <item>
+                    <uuid>d92abf20353244488b3110fba41ce7cf</uuid>
+                    <name>asyncOSMailObjects</name>
+                    <type>SNMP_AGENT</type>
+                    <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.27.0</snmp_oid>
+                    <key>asyncOSMailObjects.27.0</key>
+                    <delay>180s</delay>
+                    <history>90d</history>
+                    <value_type>TEXT</value_type>
+                    <trends>0</trends>
+                    <status>DISABLED</status>
+                    <description>-- *** ***</description>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>EmailSecurity</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>a19c12cb391e48dfb437cf249aadaa0b</uuid>
+                    <name>Mail Transfer Threads</name>
+                    <type>SNMP_AGENT</type>
+                    <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.20.0</snmp_oid>
+                    <key>mailTransferThreads.0</key>
+                    <delay>180s</delay>
+                    <history>90d</history>
+                    <status>DISABLED</status>
+                    <description>-- *** ***
+MIB: ASYNCOS-MAIL-MIB
+Object: mailTransferThreads (Gauge32)</description>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>EmailSecurity</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>7a2b8497c2bb4444a2170a733a4c8933</uuid>
+                    <name>Memory Availability Status</name>
+                    <type>SNMP_AGENT</type>
+                    <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.7.0</snmp_oid>
+                    <key>memoryAvailabilityStatus.0</key>
+                    <delay>180s</delay>
+                    <history>90d</history>
+                    <status>DISABLED</status>
+                    <description>-- *** ***
+MIB: ASYNCOS-MAIL-MIB
+Object: memoryAvailabilityStatus (Enumeration)</description>
+                    <valuemap>
+                        <name>ESA-memoryAvailabilityStatus</name>
+                    </valuemap>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>EmailSecurity</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>861adae1da59468686bc7834d55731c2</uuid>
+                    <name>Oldest Message Age</name>
+                    <type>SNMP_AGENT</type>
+                    <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.14.0</snmp_oid>
+                    <key>oldestMessageAge.0</key>
+                    <delay>180s</delay>
+                    <history>90d</history>
+                    <status>DISABLED</status>
+                    <description>-- *** ***
+MIB: ASYNCOS-MAIL-MIB
+Object: oldestMessageAge (Gauge32)</description>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>EmailSecurity</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>5a83dc83ea1141f5ac27a20f36eaa0e6</uuid>
+                    <name>Open Files Or Sockets</name>
+                    <type>SNMP_AGENT</type>
+                    <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.19.0</snmp_oid>
+                    <key>openFilesOrSockets.0</key>
+                    <delay>180s</delay>
+                    <history>90d</history>
+                    <status>DISABLED</status>
+                    <description>-- *** ***
+MIB: ASYNCOS-MAIL-MIB
+Object: openFilesOrSockets (Gauge32)</description>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>EmailSecurity</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>354de0367132414bbbfc1729c6d2a7f2</uuid>
+                    <name>Outstanding DNS Requests</name>
+                    <type>SNMP_AGENT</type>
+                    <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.15.0</snmp_oid>
+                    <key>outstandingDNSRequests.0</key>
+                    <delay>180s</delay>
+                    <history>90d</history>
+                    <status>DISABLED</status>
+                    <description>-- *** ***
+MIB: ASYNCOS-MAIL-MIB
+Object: outstandingDNSRequests (Gauge32)</description>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>EmailSecurity</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>1029ef918a6c4cd1bd232e3a0ee26550</uuid>
+                    <name>Pending DNS Requests</name>
+                    <type>SNMP_AGENT</type>
+                    <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.16.0</snmp_oid>
+                    <key>pendingDNSRequests.0</key>
+                    <delay>180s</delay>
+                    <history>90d</history>
+                    <status>DISABLED</status>
+                    <description>-- *** ***
+MIB: ASYNCOS-MAIL-MIB
+Object: pendingDNSRequests (Gauge32)</description>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>EmailSecurity</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>e6da9bec99334d0e8fff092562664c34</uuid>
+                    <name>CPU Utilization</name>
+                    <type>SNMP_AGENT</type>
+                    <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.2.0</snmp_oid>
+                    <key>perCentCPUUtilization.0</key>
+                    <delay>45s</delay>
+                    <history>90d</history>
+                    <status>DISABLED</status>
+                    <description>-- *** ***
+MIB: ASYNCOS-MAIL-MIB
+Object: perCentCPUUtilization (Integer32)</description>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>EmailSecurity</value>
+                        </tag>
+                    </tags>
+                    <triggers>
+                        <trigger>
+                            <uuid>7698b9a114e24f97b81bf23d3ac3d1c5</uuid>
+                            <expression>avg(/akeske_CW-Cisco-ESA-SNMP_test/perCentCPUUtilization.0,5m)&gt;50</expression>
+                            <name>perCentCPUUtilization 50% {HOST.NAME}</name>
+                            <priority>WARNING</priority>
+                        </trigger>
+                        <trigger>
+                            <uuid>d0581243ec0f430b80add148e9e96ca7</uuid>
+                            <expression>avg(/akeske_CW-Cisco-ESA-SNMP_test/perCentCPUUtilization.0,5m)&gt;70</expression>
+                            <name>perCentCPUUtilization 70% {HOST.NAME}</name>
+                            <priority>AVERAGE</priority>
+                        </trigger>
+                        <trigger>
+                            <uuid>a8b95a10d6774018ad7d29cda7c9dc93</uuid>
+                            <expression>avg(/akeske_CW-Cisco-ESA-SNMP_test/perCentCPUUtilization.0,5m)&gt;90</expression>
+                            <name>perCentCPUUtilization 90% {HOST.NAME}</name>
+                            <priority>HIGH</priority>
+                        </trigger>
+                    </triggers>
+                </item>
+                <item>
+                    <uuid>f6500f1c96f745e78c9deffe1bc04cc4</uuid>
+                    <name>Disk IO Utilization</name>
+                    <type>SNMP_AGENT</type>
+                    <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.3.0</snmp_oid>
+                    <key>perCentDiskIOUtilization.0</key>
+                    <delay>45s</delay>
+                    <history>90d</history>
+                    <status>DISABLED</status>
+                    <description>-- *** ***
+MIB: ASYNCOS-MAIL-MIB
+Object: perCentDiskIOUtilization (Integer32)</description>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>EmailSecurity</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>c8cd85d7a287416aa92451ddb40fd6d3</uuid>
+                    <name>Memory Utilization</name>
+                    <type>SNMP_AGENT</type>
+                    <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.1.0</snmp_oid>
+                    <key>perCentMemoryUtilization.0</key>
+                    <delay>45s</delay>
+                    <history>90d</history>
+                    <status>DISABLED</status>
+                    <description>-- *** ***
+MIB: ASYNCOS-MAIL-MIB
+Object: perCentMemoryUtilization (Integer32)</description>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>EmailSecurity</value>
+                        </tag>
+                    </tags>
+                    <triggers>
+                        <trigger>
+                            <uuid>1163873002c54d1380c88a0117d6f9de</uuid>
+                            <expression>avg(/akeske_CW-Cisco-ESA-SNMP_test/perCentMemoryUtilization.0,5m)&gt;50</expression>
+                            <name>perCentMemoryUtilization 50% {HOST.NAME}</name>
+                            <priority>WARNING</priority>
+                        </trigger>
+                        <trigger>
+                            <uuid>5ee39b9c516d4332a57bc0dde6948cd7</uuid>
+                            <expression>avg(/akeske_CW-Cisco-ESA-SNMP_test/perCentMemoryUtilization.0,5m)&gt;70</expression>
+                            <name>perCentMemoryUtilization 70% {HOST.NAME}</name>
+                            <priority>AVERAGE</priority>
+                        </trigger>
+                        <trigger>
+                            <uuid>42bbdfc24d024993898449bc56b9d101</uuid>
+                            <expression>avg(/akeske_CW-Cisco-ESA-SNMP_test/perCentMemoryUtilization.0,5m)&gt;90</expression>
+                            <name>perCentMemoryUtilization 90% {HOST.NAME}</name>
+                            <priority>HIGH</priority>
+                        </trigger>
+                    </triggers>
+                </item>
+                <item>
+                    <uuid>15fe5981d619472ab7a13c4046d31fb6</uuid>
+                    <name>Queue Utilization</name>
+                    <type>SNMP_AGENT</type>
+                    <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.4.0</snmp_oid>
+                    <key>perCentQueueUtilization.0</key>
+                    <delay>30s</delay>
+                    <history>90d</history>
+                    <status>DISABLED</status>
+                    <description>-- *** ***
+MIB: ASYNCOS-MAIL-MIB
+Object: perCentQueueUtilization (Integer32)</description>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>EmailSecurity</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>a16f42a3d61c4f0e9b6f6f1509ee1fe4</uuid>
+                    <name>Queue Availability Status</name>
+                    <type>SNMP_AGENT</type>
+                    <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.5.0</snmp_oid>
+                    <key>queueAvailabilityStatus.0</key>
+                    <delay>180s</delay>
+                    <history>90d</history>
+                    <status>DISABLED</status>
+                    <description>-- *** ***
+MIB: ASYNCOS-MAIL-MIB
+Object: queueAvailabilityStatus (Enumeration)</description>
+                    <valuemap>
+                        <name>ESA-queueAvailabilityStatus</name>
+                    </valuemap>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>EmailSecurity</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>6857312e39234885badb14df255a1064</uuid>
+                    <name>Resource Conservation Reason</name>
+                    <type>SNMP_AGENT</type>
+                    <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.6.0</snmp_oid>
+                    <key>resourceConservationReason.0</key>
+                    <delay>180s</delay>
+                    <history>90d</history>
+                    <status>DISABLED</status>
+                    <description>-- *** ***
+MIB: ASYNCOS-MAIL-MIB
+Object: resourceConservationReason (Enumeration)</description>
+                    <valuemap>
+                        <name>ESA-resourceConservationReason</name>
+                    </valuemap>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>EmailSecurity</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>f3a382b1-38e5-4a6f-a89e-25d2a67e5a87</uuid>
+                    <name>Work Queue Messages</name>
+                    <type>SNMP_AGENT</type>
+                    <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.11.0</snmp_oid>
+                    <key>workQueueMessages.0</key>
+                    <delay>180s</delay>
+                    <history>90d</history>
+                    <status>DISABLED</status>
+                    <description>-- *** ***
+MIB: ASYNCOS-MAIL-MIB
+Object: workQueueMessages (Gauge32)</description>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>EmailSecurity</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>9e120f5c-8d19-482a-b42e-a579e0a05a8b</uuid>
+                    <name>RAID Events</name>
+                    <type>SNMP_AGENT</type>
+                    <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.17.0</snmp_oid>
+                    <key>raidEvents.0</key>
+                    <delay>180s</delay>
+                    <history>90d</history>
+                    <status>DISABLED</status>
+                    <description>-- *** ***
+MIB: ASYNCOS-MAIL-MIB
+Object: raidEvents (Counter32)</description>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>EmailSecurity</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>3a4e21d5-7c1b-4f9e-a8f5-934c1b48b7a0</uuid>
+                    <name>Connection URL</name>
+                    <type>SNMP_AGENT</type>
+                    <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.21.0</snmp_oid>
+                    <key>connectionURL.0</key>
+                    <delay>180s</delay>
+                    <history>90d</history>
+                    <value_type>TEXT</value_type>
+                    <trends>0</trends>
+                    <status>DISABLED</status>
+                    <description>-- *** ***
+MIB: ASYNCOS-MAIL-MIB
+Object: connectionURL (DisplayString)</description>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>EmailSecurity</value>
+                        </tag>
+                    </tags>
+                </item>
+                <item>
+                    <uuid>c8d6a89c-5b23-4e4a-9b84-3f7d1f5e8f4c</uuid>
+                    <name>HSM Error Reason</name>
+                    <type>SNMP_AGENT</type>
+                    <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.22.0</snmp_oid>
+                    <key>hsmErrorReason.0</key>
+                    <delay>180s</delay>
+                    <history>90d</history>
+                    <value_type>TEXT</value_type>
+                    <trends>0</trends>
+                    <status>DISABLED</status>
+                    <description>-- *** ***
+MIB: ASYNCOS-MAIL-MIB
+Object: hsmErrorReason (DisplayString)</description>
+                    <tags>
+                        <tag>
+                            <tag>Application</tag>
+                            <value>EmailSecurity</value>
+                        </tag>
+                    </tags>
+                </item>
+            </items>
+            <discovery_rules>
+                <discovery_rule>
+                    <uuid>6106e95b722f4547aa150a5415433cf6</uuid>
+                    <name>License Key Expiration</name>
+                    <type>SNMP_AGENT</type>
+                    <snmp_oid>discovery[{#SNMPVALUE},.1.3.6.1.4.1.15497.1.1.1.12.1.2]</snmp_oid>
+                    <key>keyDescription.discovery</key>
+                    <delay>1h</delay>
+                    <status>DISABLED</status>
+                    <lifetime>30d</lifetime>
+                    <enabled_lifetime_type>DISABLE_NEVER</enabled_lifetime_type>
+                    <item_prototypes>
+                        <item_prototype>
+                            <uuid>17674a20b60140878462a3fbcfa305f8</uuid>
+                            <name>Key Description: {#SNMPVALUE}</name>
+                            <type>SNMP_AGENT</type>
+                            <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.12.1.2.{#SNMPINDEX}</snmp_oid>
+                            <key>keyDescription[{#SNMPVALUE}]</key>
+                            <delay>3h</delay>
+                            <value_type>CHAR</value_type>
+                            <trends>0</trends>
+                            <tags>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>EmailSecurity</value>
+                                </tag>
+                            </tags>
+                        </item_prototype>
+                        <item_prototype>
+                            <uuid>e0630d430277402d9e1eee61d8e78c24</uuid>
+                            <name>Key Is Perpetual: {#SNMPVALUE}</name>
+                            <type>SNMP_AGENT</type>
+                            <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.12.1.3.{#SNMPINDEX}</snmp_oid>
+                            <key>keyIsPerpetual[{#SNMPVALUE}]</key>
+                            <delay>3h</delay>
+                            <tags>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>EmailSecurity</value>
+                                </tag>
+                            </tags>
+                        </item_prototype>
+                        <item_prototype>
+                            <uuid>229004f993994fb8bf76ffe9d3c4f08c</uuid>
+                            <name>Key Seconds Until Expire: {#SNMPVALUE}</name>
+                            <type>SNMP_AGENT</type>
+                            <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.12.1.4.{#SNMPINDEX}</snmp_oid>
+                            <key>keySecondsUntilExpire[{#SNMPVALUE}]</key>
+                            <delay>3h</delay>
+                            <units>s</units>
+                            <tags>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>EmailSecurity</value>
+                                </tag>
+                            </tags>
+                        </item_prototype>
+                    </item_prototypes>
+                </discovery_rule>
+                <discovery_rule>
+                    <uuid>4099d218efc8474a892ac3276eb044a6</uuid>
+                    <name>Update Services</name>
+                    <type>SNMP_AGENT</type>
+                    <snmp_oid>discovery[{#SNMPVALUE},.1.3.6.1.4.1.15497.1.1.1.13.1.2]</snmp_oid>
+                    <key>updateServiceName.discovery</key>
+                    <delay>1h</delay>
+                    <status>DISABLED</status>
+                    <lifetime>30d</lifetime>
+                    <enabled_lifetime_type>DISABLE_NEVER</enabled_lifetime_type>
+                    <item_prototypes>
+                        <item_prototype>
+                            <uuid>26e2e0cc8c504f05967af7c4e4ab7d66</uuid>
+                            <name>Update Failures: {#SNMPVALUE}</name>
+                            <type>SNMP_AGENT</type>
+                            <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.13.1.4.{#SNMPINDEX}</snmp_oid>
+                            <key>updateFailures[{#SNMPVALUE}]</key>
+                            <delay>2h</delay>
+                            <tags>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>EmailSecurity</value>
+                                </tag>
+                            </tags>
+                        </item_prototype>
+                        <item_prototype>
+                            <uuid>c123602ca5f54800834b67b12c1e65a6</uuid>
+                            <name>Update Service Name: {#SNMPVALUE}</name>
+                            <type>SNMP_AGENT</type>
+                            <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.13.1.2.{#SNMPINDEX}</snmp_oid>
+                            <key>updateServiceName[{#SNMPVALUE}]</key>
+                            <delay>2h</delay>
+                            <value_type>CHAR</value_type>
+                            <trends>0</trends>
+                            <tags>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>EmailSecurity</value>
+                                </tag>
+                            </tags>
+                        </item_prototype>
+                        <item_prototype>
+                            <uuid>20da44844ff3442c84fbe543c5ea6ec5</uuid>
+                            <name>Updates: {#SNMPVALUE}</name>
+                            <type>SNMP_AGENT</type>
+                            <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.13.1.3.{#SNMPINDEX}</snmp_oid>
+                            <key>updates[{#SNMPVALUE}]</key>
+                            <delay>2h</delay>
+                            <tags>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>EmailSecurity</value>
+                                </tag>
+                            </tags>
+                        </item_prototype>
+                    </item_prototypes>
+                </discovery_rule>
+                <discovery_rule>
+                    <uuid>a1e9c5f8-4e3f-4e0a-b32c-352b2b1a0e8d</uuid>
+                    <name>Power Supply Status</name>
+                    <type>SNMP_AGENT</type>
+                    <snmp_oid>discovery[{#SNMPVALUE},.1.3.6.1.4.1.15497.1.1.1.8.1.4]</snmp_oid>
+                    <key>powerSupply.discovery</key>
+                    <delay>1h</delay>
+                    <status>DISABLED</status>
+                    <lifetime>30d</lifetime>
+                    <enabled_lifetime_type>DISABLE_NEVER</enabled_lifetime_type>
+                    <item_prototypes>
+                        <item_prototype>
+                            <uuid>b3c7b2d5-9f5e-4c7b-8b5a-7e1d1f0f7c2a</uuid>
+                            <name>Power Supply Status: {#SNMPVALUE}</name>
+                            <type>SNMP_AGENT</type>
+                            <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.8.1.2.{#SNMPINDEX}</snmp_oid>
+                            <key>powerSupply.status[{#SNMPVALUE}]</key>
+                            <delay>2h</delay>
+                            <valuemap>
+                                <name>ESA-powerSupplyStatus</name>
+                            </valuemap>
+                            <tags>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>EmailSecurity</value>
+                                </tag>
+                            </tags>
+                        </item_prototype>
+                        <item_prototype>
+                            <uuid>5c3e5d3e-9c7a-4b0d-a3d8-1c4f5c5d0e3a</uuid>
+                            <name>Power Supply Redundancy: {#SNMPVALUE}</name>
+                            <type>SNMP_AGENT</type>
+                            <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.8.1.3.{#SNMPINDEX}</snmp_oid>
+                            <key>powerSupply.redundancy[{#SNMPVALUE}]</key>
+                            <delay>2h</delay>
+                            <valuemap>
+                                <name>ESA-powerSupplyRedundancy</name>
+                            </valuemap>
+                            <tags>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>EmailSecurity</value>
+                                </tag>
+                            </tags>
+                        </item_prototype>
+                    </item_prototypes>
+                </discovery_rule>
+                <discovery_rule>
+                    <uuid>7f5d9c0e-4b3d-4e9f-8a2a-7e9b3a0f9e1b</uuid>
+                    <name>Temperature Status</name>
+                    <type>SNMP_AGENT</type>
+                    <snmp_oid>discovery[{#SNMPVALUE},.1.3.6.1.4.1.15497.1.1.1.9.1.3]</snmp_oid>
+                    <key>temperature.discovery</key>
+                    <delay>1h</delay>
+                    <status>DISABLED</status>
+                    <lifetime>30d</lifetime>
+                    <enabled_lifetime_type>DISABLE_NEVER</enabled_lifetime_type>
+                    <item_prototypes>
+                        <item_prototype>
+                            <uuid>e8a2b5d7-8c3e-4d5a-b9c1-5e8a7f0e9d6b</uuid>
+                            <name>Temperature: {#SNMPVALUE} (Celsius)</name>
+                            <type>SNMP_AGENT</type>
+                            <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.9.1.2.{#SNMPINDEX}</snmp_oid>
+                            <key>temperature.celsius[{#SNMPVALUE}]</key>
+                            <delay>2h</delay>
+                            <units>°C</units>
+                            <tags>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>EmailSecurity</value>
+                                </tag>
+                            </tags>
+                        </item_prototype>
+                    </item_prototypes>
+                </discovery_rule>
+                <discovery_rule>
+                    <uuid>1e9f5b6a-8c3d-4e9a-b8d2-9c7e8f0a5b4a</uuid>
+                    <name>Fan Status</name>
+                    <type>SNMP_AGENT</type>
+                    <snmp_oid>discovery[{#SNMPVALUE},.1.3.6.1.4.1.15497.1.1.1.10.1.3]</snmp_oid>
+                    <key>fan.discovery</key>
+                    <delay>1h</delay>
+                    <status>DISABLED</status>
+                    <lifetime>30d</lifetime>
+                    <enabled_lifetime_type>DISABLE_NEVER</enabled_lifetime_type>
+                    <item_prototypes>
+                        <item_prototype>
+                            <uuid>d5e8a3b7-7c2d-4e8a-a9f1-9c6e8f0a4b3a</uuid>
+                            <name>Fan RPM: {#SNMPVALUE}</name>
+                            <type>SNMP_AGENT</type>
+                            <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.10.1.2.{#SNMPINDEX}</snmp_oid>
+                            <key>fan.rpm[{#SNMPVALUE}]</key>
+                            <delay>2h</delay>
+                            <units>RPM</units>
+                            <tags>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>EmailSecurity</value>
+                                </tag>
+                            </tags>
+                        </item_prototype>
+                    </item_prototypes>
+                </discovery_rule>
+                <discovery_rule>
+                    <uuid>b9e2c1d4-6f8a-4c9e-a8f5-934c1b48b7a0</uuid>
+                    <name>RAID Status</name>
+                    <type>SNMP_AGENT</type>
+                    <snmp_oid>discovery[{#SNMPVALUE},.1.3.6.1.4.1.15497.1.1.1.18.1.2]</snmp_oid>
+                    <key>raid.discovery</key>
+                    <delay>1h</delay>
+                    <status>DISABLED</status>
+                    <lifetime>30d</lifetime>
+                    <enabled_lifetime_type>DISABLE_NEVER</enabled_lifetime_type>
+                    <item_prototypes>
+                        <item_prototype>
+                            <uuid>3a4e21d5-7c1b-4f9e-a8f5-934c1b48b7a0</uuid>
+                            <name>RAID Status: {#SNMPVALUE}</name>
+                            <type>SNMP_AGENT</type>
+                            <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.18.1.1.{#SNMPINDEX}</snmp_oid>
+                            <key>raid.status[{#SNMPVALUE}]</key>
+                            <delay>2h</delay>
+                            <valuemap>
+                                <name>ESA-raidStatus</name>
+                            </valuemap>
+                            <tags>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>EmailSecurity</value>
+                                </tag>
+                            </tags>
+                        </item_prototype>
+                        <item_prototype>
+                            <uuid>c8d6a89c-5b23-4e4a-9b84-3f7d1f5e8f4c</uuid>
+                            <name>RAID Last Error: {#SNMPVALUE}</name>
+                            <type>SNMP_AGENT</type>
+                            <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.18.1.3.{#SNMPINDEX}</snmp_oid>
+                            <key>raid.lasterror[{#SNMPVALUE}]</key>
+                            <delay>2h</delay>
+                            <value_type>CHAR</value_type>
+                            <trends>0</trends>
+                            <tags>
+                                <tag>
+                                    <tag>Application</tag>
+                                    <value>EmailSecurity</value>
+                                </tag>
+                            </tags>
+                        </item_prototype>
+                    </item_prototypes>
+                </discovery_rule>
+            </discovery_rules>
+            <valuemaps>
+                <valuemap>
+                    <uuid>2ca444f149a14839831d458ae3d57d95</uuid>
+                    <name>ESA-memoryAvailabilityStatus</name>
+                    <mappings>
+                        <mapping>
+                            <value>1</value>
+                            <newvalue>memoryAvailable</newvalue>
+                        </mapping>
+                        <mapping>
+                            <value>2</value>
+                            <newvalue>memoryShortage</newvalue>
+                        </mapping>
+                        <mapping>
+                            <value>3</value>
+                            <newvalue>memoryFull</newvalue>
+                        </mapping>
+                    </mappings>
+                </valuemap>
+                <valuemap>
+                    <uuid>e69dc73be39e4f1daec16f5425aeea10</uuid>
+                    <name>ESA-queueAvailabilityStatus</name>
+                    <mappings>
+                        <mapping>
+                            <value>1</value>
+                            <newvalue>queueSpaceAvailable</newvalue>
+                        </mapping>
+                        <mapping>
+                            <value>2</value>
+                            <newvalue>queueSpaceShortage</newvalue>
+                        </mapping>
+                        <mapping>
+                            <value>3</value>
+                            <newvalue>queueFull</newvalue>
+                        </mapping>
+                    </mappings>
+                </valuemap>
+                <valuemap>
+                    <uuid>7ecb7f5df83f477a8806d5ceaa5d2548</uuid>
+                    <name>ESA-resourceConservationReason</name>
+                    <mappings>
+                        <mapping>
+                            <value>1</value>
+                            <newvalue>noResourceConservation</newvalue>
+                        </mapping>
+                        <mapping>
+                            <value>2</value>
+                            <newvalue>memoryShortage</newvalue>
+                        </mapping>
+                        <mapping>
+                            <value>3</value>
+                            <newvalue>queueSpaceShortage</newvalue>
+                        </mapping>
+                        <mapping>
+                            <value>4</value>
+                            <newvalue>queueFull</newvalue>
+                        </mapping>
+                    </mappings>
+                </valuemap>
