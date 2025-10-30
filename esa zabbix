@@ -14,8 +14,6 @@
             <name>akeske_CW-Cisco-ESA-SNMP_test</name>
             <description>## Cisco Email Security Appliance (ESA) SNMPv2 Template
             
-Bu şablon ASYNCOS-MAIL-MIB MIB'inden alınan verilere dayanmaktadır.
-Tüm öğeler ve keşif kuralları varsayılan olarak devre dışı bırakılmıştır.
             
 MIB Referansı: https://mibs.observium.org/mib/ASYNCOS-MAIL-MIB/</description>
             <groups>
@@ -321,7 +319,7 @@ Object: resourceConservationReason (Enumeration)</description>
                     </tags>
                 </item>
                 <item>
-                    <uuid>f3a382b1-38e5-4a6f-a89e-25d2a67e5a87</uuid>
+                    <uuid>f3a382b138e54a6fa89e25d2a67e5a87</uuid>
                     <name>Work Queue Messages</name>
                     <type>SNMP_AGENT</type>
                     <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.11.0</snmp_oid>
@@ -340,7 +338,7 @@ Object: workQueueMessages (Gauge32)</description>
                     </tags>
                 </item>
                 <item>
-                    <uuid>9e120f5c-8d19-482a-b42e-a579e0a05a8b</uuid>
+                    <uuid>9e120f5c8d19482ab42ea579e0a05a8b</uuid>
                     <name>RAID Events</name>
                     <type>SNMP_AGENT</type>
                     <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.17.0</snmp_oid>
@@ -359,7 +357,7 @@ Object: raidEvents (Counter32)</description>
                     </tags>
                 </item>
                 <item>
-                    <uuid>3a4e21d5-7c1b-4f9e-a8f5-934c1b48b7a0</uuid>
+                    <uuid>3a4e21d57c1b4f9ea8f5934c1b48b7a0</uuid>
                     <name>Connection URL</name>
                     <type>SNMP_AGENT</type>
                     <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.21.0</snmp_oid>
@@ -380,7 +378,7 @@ Object: connectionURL (DisplayString)</description>
                     </tags>
                 </item>
                 <item>
-                    <uuid>c8d6a89c-5b23-4e4a-9b84-3f7d1f5e8f4c</uuid>
+                    <uuid>c8d6a89c5b234e4a9b843f7d1f5e8f4c</uuid>
                     <name>HSM Error Reason</name>
                     <type>SNMP_AGENT</type>
                     <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.22.0</snmp_oid>
@@ -518,7 +516,7 @@ Object: hsmErrorReason (DisplayString)</description>
                     </item_prototypes>
                 </discovery_rule>
                 <discovery_rule>
-                    <uuid>a1e9c5f8-4e3f-4e0a-b32c-352b2b1a0e8d</uuid>
+                    <uuid>a1e9c5f84e3f4e0ab32c352b2b1a0e8d</uuid>
                     <name>Power Supply Status</name>
                     <type>SNMP_AGENT</type>
                     <snmp_oid>discovery[{#SNMPVALUE},.1.3.6.1.4.1.15497.1.1.1.8.1.4]</snmp_oid>
@@ -529,7 +527,7 @@ Object: hsmErrorReason (DisplayString)</description>
                     <enabled_lifetime_type>DISABLE_NEVER</enabled_lifetime_type>
                     <item_prototypes>
                         <item_prototype>
-                            <uuid>b3c7b2d5-9f5e-4c7b-8b5a-7e1d1f0f7c2a</uuid>
+                            <uuid>b3c7b2d59f5e4c7b8b5a7e1d1f0f7c2a</uuid>
                             <name>Power Supply Status: {#SNMPVALUE}</name>
                             <type>SNMP_AGENT</type>
                             <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.8.1.2.{#SNMPINDEX}</snmp_oid>
@@ -546,7 +544,7 @@ Object: hsmErrorReason (DisplayString)</description>
                             </tags>
                         </item_prototype>
                         <item_prototype>
-                            <uuid>5c3e5d3e-9c7a-4b0d-a3d8-1c4f5c5d0e3a</uuid>
+                            <uuid>5c3e5d3e9c7a4b0da3d81c4f5c5d0e3a</uuid>
                             <name>Power Supply Redundancy: {#SNMPVALUE}</name>
                             <type>SNMP_AGENT</type>
                             <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.8.1.3.{#SNMPINDEX}</snmp_oid>
@@ -565,7 +563,7 @@ Object: hsmErrorReason (DisplayString)</description>
                     </item_prototypes>
                 </discovery_rule>
                 <discovery_rule>
-                    <uuid>7f5d9c0e-4b3d-4e9f-8a2a-7e9b3a0f9e1b</uuid>
+                    <uuid>7f5d9c0e4b3d4e9f8a2a7e9b3a0f9e1b</uuid>
                     <name>Temperature Status</name>
                     <type>SNMP_AGENT</type>
                     <snmp_oid>discovery[{#SNMPVALUE},.1.3.6.1.4.1.15497.1.1.1.9.1.3]</snmp_oid>
@@ -576,7 +574,7 @@ Object: hsmErrorReason (DisplayString)</description>
                     <enabled_lifetime_type>DISABLE_NEVER</enabled_lifetime_type>
                     <item_prototypes>
                         <item_prototype>
-                            <uuid>e8a2b5d7-8c3e-4d5a-b9c1-5e8a7f0e9d6b</uuid>
+                            <uuid>e8a2b5d78c3e4d5ab9c15e8a7f0e9d6b</uuid>
                             <name>Temperature: {#SNMPVALUE} (Celsius)</name>
                             <type>SNMP_AGENT</type>
                             <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.9.1.2.{#SNMPINDEX}</snmp_oid>
@@ -593,7 +591,7 @@ Object: hsmErrorReason (DisplayString)</description>
                     </item_prototypes>
                 </discovery_rule>
                 <discovery_rule>
-                    <uuid>1e9f5b6a-8c3d-4e9a-b8d2-9c7e8f0a5b4a</uuid>
+                    <uuid>1e9f5b6a8c3d4e9ab8d29c7e8f0a5b4a</uuid>
                     <name>Fan Status</name>
                     <type>SNMP_AGENT</type>
                     <snmp_oid>discovery[{#SNMPVALUE},.1.3.6.1.4.1.15497.1.1.1.10.1.3]</snmp_oid>
@@ -604,7 +602,7 @@ Object: hsmErrorReason (DisplayString)</description>
                     <enabled_lifetime_type>DISABLE_NEVER</enabled_lifetime_type>
                     <item_prototypes>
                         <item_prototype>
-                            <uuid>d5e8a3b7-7c2d-4e8a-a9f1-9c6e8f0a4b3a</uuid>
+                            <uuid>d5e8a3b77c2d4e8aa9f19c6e8f0a4b3a</uuid>
                             <name>Fan RPM: {#SNMPVALUE}</name>
                             <type>SNMP_AGENT</type>
                             <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.10.1.2.{#SNMPINDEX}</snmp_oid>
@@ -621,7 +619,7 @@ Object: hsmErrorReason (DisplayString)</description>
                     </item_prototypes>
                 </discovery_rule>
                 <discovery_rule>
-                    <uuid>b9e2c1d4-6f8a-4c9e-a8f5-934c1b48b7a0</uuid>
+                    <uuid>b9e2c1d46f8a4c9ea8f5934c1b48b7a0</uuid>
                     <name>RAID Status</name>
                     <type>SNMP_AGENT</type>
                     <snmp_oid>discovery[{#SNMPVALUE},.1.3.6.1.4.1.15497.1.1.1.18.1.2]</snmp_oid>
@@ -632,7 +630,7 @@ Object: hsmErrorReason (DisplayString)</description>
                     <enabled_lifetime_type>DISABLE_NEVER</enabled_lifetime_type>
                     <item_prototypes>
                         <item_prototype>
-                            <uuid>3a4e21d5-7c1b-4f9e-a8f5-934c1b48b7a0</uuid>
+                            <uuid>3a4e21d57c1b4f9ea8f5934c1b48b7a0</uuid>
                             <name>RAID Status: {#SNMPVALUE}</name>
                             <type>SNMP_AGENT</type>
                             <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.18.1.1.{#SNMPINDEX}</snmp_oid>
@@ -649,7 +647,7 @@ Object: hsmErrorReason (DisplayString)</description>
                             </tags>
                         </item_prototype>
                         <item_prototype>
-                            <uuid>c8d6a89c-5b23-4e4a-9b84-3f7d1f5e8f4c</uuid>
+                            <uuid>c8d6a89c5b234e4a9b843f7d1f5e8f4c</uuid>
                             <name>RAID Last Error: {#SNMPVALUE}</name>
                             <type>SNMP_AGENT</type>
                             <snmp_oid>.1.3.6.1.4.1.15497.1.1.1.18.1.3.{#SNMPINDEX}</snmp_oid>
